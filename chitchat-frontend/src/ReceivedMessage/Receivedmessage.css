@@ -1,0 +1,14 @@
+.card_received{
+    width: 60%;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 10px 10px 10px 0;
+    background-color: rgb(76, 75, 75);
+    box-shadow: 0 4px 8px 0 #00000033, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /* background-image: linear-gradient(135deg, #4aa9e8 0%, #7f85ec 100%); */
+    border: 1px solid #f2f2f2;
+    float: left;
+}
+.heading_h1{
+    color: white;
+}

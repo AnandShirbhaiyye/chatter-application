@@ -1,0 +1,19 @@
+.card_send{
+    width: 60%;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 10px 10px  0 10px;
+    background-color: #f2f2f2;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: 1px solid #f2f2f2;
+    float: right;
+    background-color: rgb(5, 113, 5);
+    /* background-image: linear-gradient(135deg, green 0%, rgb(7, 126, 7) 100%); */
+}
+.heading_h1{
+    color: white;
+}
+.span_time{
+    float: right;
+    color: #61dafb;
+}
