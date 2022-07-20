@@ -4,7 +4,8 @@ const cors = require('cors');
 const messageModel = require('./models/message');
 const PORT = 5000;
 const app = express();
-require('dotenv').config()
+require('dotenv').config();
+const path = require('path');
 app.use(cors());
 app.use(express.json());
 
@@ -51,6 +52,14 @@ app.get('/message', async (req,res)=>{
     const messages = await messageModel.find();
     res.send(messages);
 })
+
+if(process.env.NODE_ENV === 'production') {
+    app.use(express.static(path.join(__dirname, '..', 'client', 'build')));
+
+    app.get('*', (req, res) => {
+        res.sendFile(path.join(__dirname, '..', 'client', 'build', 'index.html'))
+    });
+}
 
 
 app.listen(PORT, () => {
